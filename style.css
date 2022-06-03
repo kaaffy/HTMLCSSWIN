@@ -1,0 +1,579 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+.wrap{
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	align-items: center;
+	background-image: 
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+	background: size h 786px;
+	background-repeat: no-repeat;
+	background-position: right top,-220px 70vh,right 200vh,200px 310vh;
+}
+/*在1105px變更樣式*/
+@media (max-width:1105px) {	
+	.wrap{
+	background-image: 
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+	background-repeat: no-repeat;
+	background-position: right top,-220px 45vh,right 220vh,100px 330vh;
+	background-size: 70vh,40vh;
+	}	
+}
+/*在768px變更樣式*/
+@media (max-width:768px) {	
+	.wrap{
+	background-image: 
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg"),
+	url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+	background-repeat: no-repeat;
+	background-position: center 360px,-90px 90vh,right 430vh,-100px 560vh;
+	background-size: 334px,25vh,20vh,25vh;
+	}
+}
+.wrap h2{
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 48px;
+}
+@media (max-width:768px) {	
+	.wrap h2 {
+		font-size: 28px;
+	}
+}
+.wrap h3{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 48px;
+	padding-left: 20px;
+	padding-right: 21px;
+	line-height: 1.4;
+}
+@media (max-width:768px) {	
+	.wrap h3 {
+		font-size: 18px;
+	}
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    height: 88px;
+	padding-left: 142px;
+	padding-right: 139px;
+	padding-bottom: 30px;
+}
+@media (max-width:1105px) {	
+	.nav {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width:768px) {	
+	.nav {
+		padding-bottom: 0px;
+		border-bottom:2px #FFD153 solid;
+	}
+}
+.nav img{
+	height: 40px;
+}
+/*在1105px直式版型變更樣式*/
+@media (max-width:1105px) {	
+	.nav img{
+		height: 32px;
+	}
+}
+@media (max-width:768px) {	
+	.nav img{
+		height: 24px;
+	}
+}
+.nav a{
+	color: #fff;
+	background-color: #ff5D50;
+	padding: 32px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 22px;
+}
+.nav a:hover{
+	background-color: #5a2d29;
+}
+.hero_ball{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+@media (max-width:768px) {	
+	.hero_ball{
+		flex-direction: column;
+		margin-top: 32px;
+		padding-bottom: 40px;
+	}
+}
+.hero_ball img{
+	width: 532px;
+	padding-right: 140px;	
+}
+/*在1105px直式版型變更樣式*/
+@media (max-width:1105px) {	
+	.hero_ball img{
+		width: 300px;
+		padding-right: 40px;
+	}
+}
+@media (max-width:768px) {	
+	.hero_ball img{
+		width: 300px;
+		padding-top: 32px;
+	}
+}
+.intro{
+	padding-left: 141px;
+	margin-right: 102px;
+	text-align: left;	
+}
+@media (max-width:1105px) {	
+	.intro {
+		padding-left: 40px;
+		margin-right: 50px;
+	}
+}
+.intro h2{
+	color: #56C4C5;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 8px;
+	padding-left: 6px;
+	text-align: left;
+}
+.intro h1{
+	font-size: 48px;
+	font-weight: 900;
+	line-height: 1.2;
+	padding-bottom: 16px;
+}
+@media (max-width:1105px) {	
+	.intro h1{
+		font-size: 34px;
+	}
+}
+.intro p{
+	font-size: 20px;
+	padding-left: 6px;
+}
+.community_item{
+	display: flex;
+	justify-content: center;
+	padding-left: 193px;
+	padding-right: 204px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+@media (max-width:1105px) {	
+	.community_item{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width:768px) {	
+	.community_item{
+		flex-direction: column;
+	}
+}
+.community_item_card{
+	margin-right: 63px;
+	margin-left: 63px;
+	margin-bottom: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (max-width:1105px) {	
+	.community_item_card{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+@media (max-width:768px) {	
+	.community_item_card{
+		padding-bottom: 24px;
+	}
+}
+.community_item img{
+	width: 90px;
+	height: 90px;
+	padding-bottom: 24px;
+}
+.community_item p{
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 24px;
+}
+.community_item h5{
+	width: 240px;
+	color: gray;
+	font-weight: 500;
+	line-height: 1.4;
+}
+@media (max-width:1105px) {	
+	.community_item h5{
+		width: 200px;
+	}
+}
+.introduce h2{
+	padding-bottom: 16px;
+}
+.introduce_item{
+	display: flex;
+	justify-content: center;
+	padding-left: 139px;
+	padding-right: 139px;
+	margin-bottom: 100px;
+}
+@media(max-width:768px){
+	.introduce_item{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.introduce_set{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px #DDDDDD;
+	width: 260px;
+	height: 388px;
+	border-radius: 12px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+@media(max-width:768px){
+	.introduce_set{
+		margin-bottom: 24px;
+	}
+}
+.introduce_set img{
+	border-radius: 12px 12px 0px 0px;
+}
+.introduce_set p{
+	font-weight: 800;
+	color: #56C4C5;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.introduce_set h5{
+	line-height: 1.4;
+}
+.sellpoint_price{
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+	padding-right: 142px;
+	padding-left: 139px;
+}
+@media (max-width:1442px) {	
+	.sellpoint_price{
+		flex-direction: column-reverse;	
+	}
+}
+.sellpoint{
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	justify-content: center;
+}
+@media (max-width:1442px) {	
+	.sellpoint{
+		padding-top: 32px;
+	}
+}
+.sellpoint_item{
+	background-color: #fff;
+	box-shadow:0px 0px 8px #efebeb;
+	border-radius: 12px;
+	margin-bottom: 28px;
+	margin-right: 28px;
+	margin-left: 28px;
+	padding: 32px;
+}
+.round{
+	position: relative;
+	width: 86px;
+	height: 86px;
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: 0px 0px 4px #efebeb;
+}
+.sellpoint_item img{
+	position: absolute;
+	height: 52px;
+	width: 52px;
+	padding-left: 17px;
+	padding-top: 17px;
+}
+.sellpoint_item h3{
+	margin-top: 24px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 0px;
+	padding-bottom: 8px;
+}
+@media (max-width:1105px) {	
+	.sellpoint_item h3{
+		padding-bottom: 8px;
+	}
+}
+.sellpoint_item h5{
+	width: 166px;
+	line-height: 1.4;
+}
+
+@media (max-width:1105px) {	
+	.sellpoint_item h3{
+		padding-bottom: 8px;
+	}
+}
+@media (max-width:768px) {	
+	.price {
+		padding-bottom: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.price h2{
+	font-size: 32px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.4;
+	margin-bottom: 16px;
+	padding-bottom: 0px;
+}
+.price h3{
+	width: 395px;
+	line-height: 1.4;
+	margin-bottom: 24px;
+	text-align: left;
+	padding-bottom: 0px;
+}
+@media (max-width:824px) {	
+	.price h2{
+		text-align: center;
+	}
+	.price h3{
+		width: 335px;
+		text-align: center;
+	}
+}
+.price a{
+	text-decoration: none;
+	background-color: #56C4C5;
+	color: #fff;
+	padding: 32px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 27px;
+}
+.price a:hover{
+	background-color: #2a5455;
+}
+.feedback{
+	display: flex;
+	justify-content: center;
+}
+@media (max-width:1124px) {	
+	.feedback{
+		flex-wrap: nowrap;
+		overflow-x: auto;	
+		justify-content: flex-start;
+	}
+}
+.feedback_item{
+	position: relative;
+	width: 30%;
+	padding: 32px;
+	padding-top: 48px;
+	border-radius: 12px;
+	box-shadow: 0px 0px 8px #e7e0e0;
+	margin-left: 16px;
+	margin-top: 56px;
+	background-color: #fff;
+}
+@media (max-width:1105px) {	
+	.feedback_item{
+		width: 100%;
+		padding-bottom: 32px;
+	}
+}
+.feedback_item img{
+	width: 80px;
+	border-radius: 40px;
+	position: absolute;
+	left: 32px;
+	top: -50px;
+}
+.feedback_item h4{
+	width: 288px;
+	line-height: 1.4;
+}
+.feedback_item h5{
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.whosstar{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+@media (max-width:1105px) {	
+	.whosstar{
+	
+	flex-direction: column;
+	align-items: baseline;
+	}
+}
+.star{
+	margin-right: 1px;
+	display: flex;
+}@media (max-width:1105px) {	
+	.star{
+		margin-top: 8px;
+	}
+}
+.star img{
+	width: 16%;
+	border-radius: 5px;
+	position: relative;
+	padding-right: 5px;
+	padding-top: 0px;
+	left: 0px;
+	top: 0px;
+}
+.link-top{
+	width: 100%;
+	height: 1px;
+	border-top: solid #DDDDDD 1px;
+	margin-top: 12px;
+	margin-bottom: 24px;
+}
+.dot_set{
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+}
+.dot {
+	width: 10px;
+	height: 10px;
+	background-color: #DDDDDD;
+	border-radius: 10px;
+	margin-right: 8px;
+}
+.long_dot {
+	width: 20px;
+	height: 10px;
+	background-color: #FFD153;
+	border-radius: 20px;
+	margin-bottom: 100px;
+}
+.footer{
+	background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg") ;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	align-content: center;
+}
+.copyright{
+	background-color: #DDDDDD;
+	background-size: cover;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-top: 60px;
+}
+.footer h2{
+	padding-top: 280px;
+}
+@media (max-width:1105px) {	
+	.footer h2{
+		padding-top: 200px;
+	}
+}
+@media (max-width:768px) {	
+	.footer h2{
+		padding-top: 100px;
+	}
+}
+.footer a{
+	text-decoration: none;
+	background-color: #56C4C5;
+	color: #fff;
+	padding: 32px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 27px;
+}
